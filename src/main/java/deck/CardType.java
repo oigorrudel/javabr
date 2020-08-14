@@ -1,4 +1,4 @@
-package main.java.deck;
+package deck;
 
 import java.util.Arrays;
 import java.util.Collection;

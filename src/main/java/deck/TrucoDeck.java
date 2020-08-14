@@ -1,4 +1,4 @@
-package main.java.deck;
+package deck;
 
 public class TrucoDeck extends AbstractDeck {
 
@@ -11,11 +11,9 @@ public class TrucoDeck extends AbstractDeck {
     @Override
     protected void generateByType(CardType type) {
         int i = 1;
-        while(i <= 7)
-            add(new NormalCard(type, i++));
+        addAll(i, type, 7);
 
         i = 10;
-        while(i <= 12)
-            add(new NormalCard(type, i++));
+        addAll(i, type, 3);
     }
 }

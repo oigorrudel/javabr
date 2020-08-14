@@ -1,4 +1,4 @@
-package main.java.deck;
+package deck;
 
 public class NormalDeck extends AbstractDeck {
 
@@ -18,7 +18,6 @@ public class NormalDeck extends AbstractDeck {
 
     @Override
     protected void generateByType(CardType type) {
-        for(int i = 1; i <= 13; i++)
-            add(new NormalCard(type, i));
+        addAll(1, type, 13);
     }
 }
